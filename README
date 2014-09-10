@@ -1,6 +1,6 @@
 NAME
-    Scalar::Accessors::LikeHash - access a JSON/Sereal/etc scalar string in
-    a hash-like manner
+    Scalar::Accessors::LikeHash - access a JSON/Sereal/etc scalar string in a
+    hash-like manner
 
 SYNOPSIS
        {
@@ -30,28 +30,28 @@ SYNOPSIS
        $object->delete('some_key');
 
 DESCRIPTION
-    The idea of this is to treat a reference to a string as if it were a
-    hash. You can store key-values pairs; fetch values using keys; delete
-    keys; etc. This is slow and quite silly.
+    The idea of this is to treat a reference to a string as if it were a hash.
+    You can store key-values pairs; fetch values using keys; delete keys; etc.
+    This is slow and quite silly.
 
     This module is a role. Concrete implementations of the role need to
-    provide "_from_hash" and "_to_hash" methods to serialize and deserialize
-    a hashref to/from a scalarref.
+    provide `_from_hash` and `_to_hash` methods to serialize and deserialize a
+    hashref to/from a scalarref.
 
     This role provides the following methods:
 
-    "new(\$scalar)"
+    `new(\$scalar)`
         Yes, this role provides a constructor. Consumers can overide it.
 
-    "fetch($key)"
-    "store($key, $value)"
-    "exists($key)"
-    "delete($key)"
-    "clear()"
+    `fetch($key)`
+    `store($key, $value)`
+    `exists($key)`
+    `delete($key)`
+    `clear()`
         Delete for each key.
 
-    "keys()"
-    "values()"
+    `keys()`
+    `values()`
 
     These can be called as methods on a blessed scalar reference:
 
@@ -83,8 +83,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2013 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
